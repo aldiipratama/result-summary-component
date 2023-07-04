@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Results summary component</title>
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Your Result 76 of 100 Great You scored higher than 65% of the people who
+    have taken these tests. Summary Reaction 80 / 100 Memory 92 / 100 Verbal 61
+    / 100 Visual 72 / 100 Continue -->
+
+    <div class="container flex h-[100vh] items-center justify-center">
+      <div class="wrapping sm:flex sm:max-w-2xl sm:rounded-3xl sm:shadow-2xl">
+        <div class="flex flex-wrap sm:w-1/2">
+          <div
+            class="w-full rounded-b-3xl bg-gradient-to-b from-light-slate-blue to-light-royal-blue px-10 pb-10 pt-5 text-center sm:rounded-3xl"
+          >
+            <h3 class="text-pale-blue">Your Result</h3>
+            <div
+              class="mx-auto my-5 flex h-32 w-32 flex-col items-center justify-center rounded-full bg-gradient-to-t from-transparent to-violet-blue text-white"
+            >
+              <span class="block text-6xl font-bold">76</span>
+              <span class="block text-xs text-light-lavender opacity-60"
+                >of 100</span
+              >
+            </div>
+            <h2 class="pb-2 text-2xl text-white">Great</h2>
+            <p class="text-base text-light-lavender">
+              You scored higher than 65% of the people who have taken these
+              tests.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col flex-wrap px-5 sm:w-1/2">
+          <h3 class="py-4">summary</h3>
+          <div class="card relative mb-4 flex rounded-lg bg-light-red/10 p-4">
+            <div class="icon mr-2">
+              <img src="assets/images/icon-reaction.svg" alt="Reaction" />
+            </div>
+            <p class="text-light-red">Reaction</p>
+            <p class="absolute right-4">
+              80 <span class="text-slate-400">/ 100</span>
+            </p>
+          </div>
+          <div
+            class="card relative mb-4 flex rounded-lg bg-orangey-yellow/10 p-4"
+          >
+            <div class="icon mr-2">
+              <img src="assets/images/icon-memory.svg" alt="Reaction" />
+            </div>
+            <p class="text-orangey-yellow">Memory</p>
+            <p class="absolute right-4">
+              92 <span class="text-slate-400">/ 100</span>
+            </p>
+          </div>
+          <div class="card relative mb-4 flex rounded-lg bg-green-teal/10 p-4">
+            <div class="icon mr-2">
+              <img src="assets/images/icon-verbal.svg" alt="Reaction" />
+            </div>
+            <p class="text-green-teal">Verbal</p>
+            <p class="absolute right-4">
+              61 <span class="text-slate-400">/ 100</span>
+            </p>
+          </div>
+          <div class="card relative mb-4 flex rounded-lg bg-cobalt-blue/10 p-4">
+            <div class="icon mr-2">
+              <img src="assets/images/icon-visual.svg" alt="Reaction" />
+            </div>
+            <p class="text-cobalt-blue">Visual</p>
+            <p class="absolute right-4">
+              72 <span class="text-slate-400">/ 100</span>
+            </p>
+          </div>
+          <button
+            class="mb-4 rounded-full bg-dark-gray-blue py-3 text-white hover:bg-gradient-to-b hover:from-light-slate-blue hover:to-violet-blue active:opacity-95"
+          >
+            Continue
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
+</html>
